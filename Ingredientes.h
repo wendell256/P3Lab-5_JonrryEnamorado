@@ -7,16 +7,16 @@ using namespace std;
 class Ingredientes{
     private:
             string name, type;
-            int aporte,duracion;
+            double aporte,duracion;
     public:
             void setName(string);
             string getName();
             void setType(string);
             string getType();
-            void setAporte(int);
-            int getAporte();
-            void setDuracion(int);
-            int getDuracion();
+            void setAporte(double);
+            double getAporte();
+            void setDuracion(double);
+            double getDuracion();
 };
 
 #endif

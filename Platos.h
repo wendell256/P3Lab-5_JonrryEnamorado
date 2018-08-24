@@ -1,17 +1,19 @@
 #ifndef PLATOS_H
 #define PLATOS_H
 
+#include "Ingredientes.h"
 #include <string>
 #include <vector>
 using namespace std;
 
 class Platos{
     private:
-        double cantidadIng,sabor,cocinado,precio;
+        double sabor,cocinado,precio;
         string reseña;
+        vector<Ingredientes*>Ingredients;
+        vector<double> cantidadIng;
     public:
-        void setCantidadIng(double);
-        double getCantidadIng();
+        Platos(double,double,double,string);
         void setReseña(string);
         string getReseña();
         void setSabor(double);
@@ -20,4 +22,8 @@ class Platos{
         double getCocinado();
         void setPrecio(double);
         double getPrecio();
+        void addIngrediente(Ingredientes*,double);
+
 };
+
+#endif
