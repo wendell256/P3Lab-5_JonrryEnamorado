@@ -4,11 +4,12 @@
 
 using namespace std;
 
-Ingredientes::Ingredientes(string Tname,string Ttype,double Taporte,double Tduracion){
+Ingredientes::Ingredientes(string Tname,string Ttype,double Taporte,double Tduracion,double Tcantidad){
     name = Tname;
     type = Ttype;
     aporte = Taporte;
     duracion = Tduracion;
+    cantidad = Tcantidad;
 
 }
 
@@ -42,4 +43,16 @@ void Ingredientes::setDuracion(double Tduracion){
 
 double Ingredientes::getDuracion(){
     return duracion;
+}
+
+void Ingredientes::setInventario(double Tinventario){
+    inventario=Tinventario;
+}
+
+void Ingredientes::setCantidad(double Tcantidad){
+    cantidad = Tcantidad;
+}
+
+double Ingredientes::getCantidad(){
+    return cantidad;
 }

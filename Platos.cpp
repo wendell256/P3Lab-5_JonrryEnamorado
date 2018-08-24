@@ -3,20 +3,13 @@
 #include <vector>
 using namespace std;
 
-Platos::Platos(double Tsabor,double Tcocinado, double Tprecio,string Tresena){
+Platos::Platos(double Tsabor,double Tcocinado, double Tprecio,string Tresena,string Tname){
     sabor = Tsabor;
     cocinado = Tcocinado;
     precio = Tprecio;
     resena = Tresena;
+    name = Tname;
 
-}
-
-void Platos::setResena(string Tresena){
-    resena=Tresena;
-}
-
-string Platos::getResena(){
-    return resena;
 }
 
 void Platos::setSabor(double Tsabor){
@@ -25,6 +18,14 @@ void Platos::setSabor(double Tsabor){
 
 double Platos::getSabor(){
     return sabor;
+}
+
+void Platos::setResena(string Tresena){
+    resena=Tresena;
+}
+
+string Platos::getResena(){
+    return resena;
 }
 
 void Platos::setCocinado(double Tcocinado){
@@ -46,4 +47,12 @@ double Platos::getPrecio(){
 void Platos::addIngrediente(Ingredientes* nuevo,double cantNuevo){
     Ingredients.push_back(nuevo);
     cantidadIng.push_back(cantNuevo);
+}
+
+void Platos::setName(string Tname){
+    name = Tname;
+}
+
+string Platos::getName(){
+    return name;
 }

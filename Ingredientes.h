@@ -7,9 +7,9 @@ using namespace std;
 class Ingredientes{
     private:
             string name, type;
-            double aporte,duracion;
+            double aporte,duracion,inventario,cantidad;
     public:
-            Ingredientes(string,string,double,double);
+            Ingredientes(string,string,double,double,double);
             void setName(string);
             string getName();
             void setType(string);
@@ -18,6 +18,10 @@ class Ingredientes{
             double getAporte();
             void setDuracion(double);
             double getDuracion();
+            void setInventario(double);
+            double getInventario();
+            void setCantidad(double);
+            double getCantidad();
 };
 
 #endif
