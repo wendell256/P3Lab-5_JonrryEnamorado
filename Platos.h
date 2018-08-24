@@ -9,13 +9,13 @@ using namespace std;
 class Platos{
     private:
         double sabor,cocinado,precio;
-        string reseña;
+        string resena;
         vector<Ingredientes*>Ingredients;
         vector<double> cantidadIng;
     public:
         Platos(double,double,double,string);
-        void setReseña(string);
-        string getReseña();
+        void setResena(string);
+        string getResena();
         void setSabor(double);
         double getSabor();
         void setCocinado(double);

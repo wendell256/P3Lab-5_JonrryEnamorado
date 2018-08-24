@@ -9,6 +9,7 @@ class Ingredientes{
             string name, type;
             double aporte,duracion;
     public:
+            Ingredientes(string,string,double,double);
             void setName(string);
             string getName();
             void setType(string);
