@@ -86,17 +86,18 @@ void Administracion(){
 }
 
 void Clientesl(){
-    int opc=0,opc2=0;
+    int opc=0,opc2=0, plato=0;
     string name;
+    Clientes* temp = new Clientes(name);
     cout<<"1) Nuevo Cliente"<<endl<<"2) Ingresar"<<endl<<"Ingrese una opcion:"<<endl;
     cin>>opc;
     switch(opc){
-        case 1:
 
+        case 1:
             cout<<"Ingrese nombre:"<<endl;
             cin>>name;
-            Clientes* temp = new Clientes(name);
             clientes.push_back(temp);
+           
         break;
         case 2:
             
@@ -106,7 +107,11 @@ void Clientesl(){
             cout<<"Quien eres?Ingresa Numero:"<<endl;
             cin>>opc2;
             cout<<endl<<"****BIENVENIDO****"<<endl<<"Nombre: "<<clientes[opc2-1]->getName()<<endl<<"Evaluacion:"<<clientes[opc2-1]->getEvaluacionm()<<endl<<"DInero gastado: "<<clientes[opc2-1]->getDinerog();
-            cout<<"***"
+            cout<<"***COMPRA UN PLATO***";
+            bodega->printPlat();
+            cout<<endl<<"Ingrese un numero de platillo:"<<endl;
+            cin>>plato;
+            
         break;
         default:
             cout<<"Opcion no valida"<<endl;
